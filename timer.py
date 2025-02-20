@@ -27,3 +27,12 @@ def get_formatted_time_ms() -> str:
         str: 格式化的时间字符串,格式为'YYYY-MM-DD HH:MM:SS.MS'
     """
     return time.strftime("%Y-%m-%d %H:%M:%S.MS", time.localtime())
+
+
+def get_formatted_time_ms_us() -> str:
+    """
+    获取格式化的当前时间字符串(毫秒+微秒)
+    
+    Returns:
+        str: 格式化的时间字符串,格式为'YYYY-MM-DD HH:MM:SS.MS_US'
+    """
